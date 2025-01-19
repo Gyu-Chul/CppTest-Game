@@ -1,46 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\",
+  "WorkspaceRootPath": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\World.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:World.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\World.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:World.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Tool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Tool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:World.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Tool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Tool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\System.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\System.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:System.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Tool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Tool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Tool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Tool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,28 +50,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tool.cpp",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Tool.cpp",
-              "RelativeDocumentMoniker": "Tool.cpp",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Tool.cpp",
-              "RelativeToolTip": "Tool.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-19T05:37:20.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Item.cpp",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Item.cpp",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Item.cpp",
               "RelativeDocumentMoniker": "Item.cpp",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Item.cpp",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Item.cpp",
               "RelativeToolTip": "Item.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -79,12 +66,29 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "Tool.cpp",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Tool.cpp",
+              "RelativeDocumentMoniker": "Tool.cpp",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Tool.cpp",
+              "RelativeToolTip": "Tool.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-19T05:37:20.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Monster.cpp",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Monster.cpp",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Monster.cpp",
               "RelativeDocumentMoniker": "Monster.cpp",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Monster.cpp",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Monster.cpp",
               "RelativeToolTip": "Monster.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -93,24 +97,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "World.cpp",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\World.cpp",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.cpp",
               "RelativeDocumentMoniker": "World.cpp",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\World.cpp",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.cpp",
               "RelativeToolTip": "World.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-18T01:47:46.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "System.h",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\System.h",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\System.h",
               "RelativeDocumentMoniker": "System.h",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\System.h",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\System.h",
               "RelativeToolTip": "System.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -119,24 +123,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Tool.h",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Tool.h",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Tool.h",
               "RelativeDocumentMoniker": "Tool.h",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Tool.h",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Tool.h",
               "RelativeToolTip": "Tool.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-18T01:51:27.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Player.h",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Player.h",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Player.h",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Player.h",
               "RelativeToolTip": "Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -145,11 +149,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Monster.h",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Monster.h",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Monster.h",
               "RelativeDocumentMoniker": "Monster.h",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Monster.h",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Monster.h",
               "RelativeToolTip": "Monster.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -158,33 +162,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Item.h",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Item.h",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Item.h",
               "RelativeDocumentMoniker": "Item.h",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\Item.h",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\Item.h",
               "RelativeToolTip": "Item.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-18T01:50:41.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "World.h",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\World.h",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.h",
               "RelativeDocumentMoniker": "World.h",
-              "ToolTip": "D:\\OneDrive\\Documents\\Github\\TestingPlace\\C\u002B\u002BTEST\\World.h",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.h",
               "RelativeToolTip": "World.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-18T01:49:22.964Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
