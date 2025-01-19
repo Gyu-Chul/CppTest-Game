@@ -46,4 +46,4 @@ public:
     HighArmor();
 };
 
-#endif // TOOL_H
+#endif

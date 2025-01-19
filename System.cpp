@@ -1,19 +1,15 @@
 #include "System.h"
-#include <iostream>
 
 System::System() {}
 
-
-
 void System::clear() {
-    std::cout << "Clear the stage!" << std::endl;
+    cout << "Clear the stage!" << endl;
 }
 
 void System::playerSelect() {
-    std::cout << "Which Stage do you want?" << std::endl;
+    cout << "Which stage do you want?" << endl;
 }
 
 void System::fail() {
-    std::cout << "Fail the stage!" << std::endl;
+    cout << "Fail the stage!" << endl;
 }
-
