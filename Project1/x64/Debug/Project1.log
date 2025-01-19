@@ -1,2 +1,15 @@
-﻿  World.cpp
-  Project1.vcxproj -> C:\Users\Gyuho\Desktop\github\CppTest-Game\x64\Debug\Project1.exe
+﻿  Item.cpp
+  Monster.cpp
+D:\OneDrive\Documents\Github\CppTest-Game\Monster.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Monster.cpp'을(를) 컴파일하는 중)
+  
+  Player.cpp
+  System.cpp
+  Tool.cpp
+  World.cpp
+D:\OneDrive\Documents\Github\CppTest-Game\Monster.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'World.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
+  LINK : D:\OneDrive\Documents\Github\CppTest-Game\x64\Debug\Project1.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  Project1.vcxproj -> D:\OneDrive\Documents\Github\CppTest-Game\x64\Debug\Project1.exe
