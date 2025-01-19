@@ -1,11 +1,11 @@
 #include "World.h"
+#include <iostream>
+using namespace std;
 
-
-World::World(int n)
+World::World(int n) 
 	: number(n) {}
 
 int main() {
-
 	World testWorld(1);
 	BasicSword basicSword;
 	HighQualitySword highQualitySword;
