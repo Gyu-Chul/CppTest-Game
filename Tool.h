@@ -44,5 +44,6 @@ public:
 class HighArmor : public Tool {
 public:
     HighArmor();
+};
 
-#endif // TOOL_H
+#endif
