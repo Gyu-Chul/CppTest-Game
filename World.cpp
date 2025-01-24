@@ -1,5 +1,5 @@
 #include "World.h"
-
+#include "DataSession.h"
 
 World::World(int n)
 	: number(n) {}
@@ -39,4 +39,24 @@ int main() {
 	cout << "Low Armor - Price: " << lowArmor.price << ", Defense Power: " << lowArmor.defensePower << ", Power: " << lowArmor.power << endl;
 	cout << "Middle Armor - Price: " << middleArmor.price << ", Defense Power: " << middleArmor.defensePower << ", Power: " << middleArmor.power << endl;
 	cout << "High Armor - Price: " << highArmor.price << ", Defense Power: " << highArmor.defensePower << ", Power: " << highArmor.power << endl;
+
+	DataSession session("datas.txt");
+
+
+	session.create("minchul2", "12345");
+
+	// Read
+	std::cout << "User ID: " << session.read(1, "userId") << std::endl;
+	std::cout << "Token : " << session.read(1, "token") << std::endl;
+
+	// Update
+	session.update(1, "level", "10");
+	std::cout << "Updated Level: " << session.read(1, "level") << std::endl;
+
+	// Delete
+	//session.Delete(3);
+
+	return 0;
+
+
 }
