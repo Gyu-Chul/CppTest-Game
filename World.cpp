@@ -40,7 +40,7 @@ int main() {
 	cout << "Middle Armor - Price: " << middleArmor.price << ", Defense Power: " << middleArmor.defensePower << ", Power: " << middleArmor.power << endl;
 	cout << "High Armor - Price: " << highArmor.price << ", Defense Power: " << highArmor.defensePower << ", Power: " << highArmor.power << endl;
 
-	DataSession session("datas.txt");
+	DataSession ("datas.txt");
 
 
 	session.create("minchul2", "12345");
