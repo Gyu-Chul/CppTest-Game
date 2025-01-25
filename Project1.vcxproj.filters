@@ -33,6 +33,12 @@
     <ClCompile Include="System.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="StoreSession.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StageSession.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Item.h">
@@ -51,6 +57,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="System.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreSession.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StageSession.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

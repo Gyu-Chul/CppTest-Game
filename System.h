@@ -1,15 +1,23 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
+#include "Player.h"
+#include "generalSession.h"
+#include "storeSession.h"
 #include <iostream>
-using namespace std;
 
 class System {
+private:
+    GeneralSession generalSession; // 일반 세션 객체
+    StoreSession storeSession;     // 상점 세션 객체
+
 public:
-    System();   
-    void clear();         
-    void playerSelect(); 
-    void fail(); 
+    // 현재 세션 실행
+    void executeSession();
+
+    // 세션 핸들러
+    void handleGeneralSession();
+    void handleStoreSession();
 };
 
 #endif // SYSTEM_H
