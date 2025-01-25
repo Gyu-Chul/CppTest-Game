@@ -7,11 +7,11 @@ void System::executeSession() {
     switch (player.presentSession) {
     case 1: // GeneralSession 실행
         std::cout << "Executing General Session..." << std::endl;
-       /* handleGeneralSession();*/
+        handleGeneralSession();
         break;
     case 3: // StoreSession 실행
         std::cout << "Executing Store Session..." << std::endl;
-        handleStoreSession(); // StoreSession에 Player 전달
+        handleStoreSession();
         break;
     default:
         std::cerr << "Unknown session ID. Unable to execute session." << std::endl;
