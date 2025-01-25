@@ -11,7 +11,7 @@ extern Player player;
 void GeneralSession::checkMyInfo() {
     // 예시 출력
     cout << "=== My Info ===" << endl;
-    cout << "Name: " << player.name << endl;
+    cout << "Name: " << player.id << endl;
     cout << "Level: " << player.level << endl;
     cout << "Experience: " << player.exp << endl;
     cout << "Money: " << player.money << endl;
@@ -34,7 +34,7 @@ void GeneralSession::enterDungeon() {
 void GeneralSession::logout() {
     // DB 최신화 및 로그아웃 처리
     DataSession dataSession("datas.txt");
-    const int playerToken = player.token; // 토큰은 상수로 가정
+    const int playerToken = 1; // 토큰은 상수로 가정
     dataSession.update(playerToken, "level", to_string(player.level));
     dataSession.update(playerToken, "exp", to_string(player.exp));
     dataSession.update(playerToken, "money", to_string(player.money));

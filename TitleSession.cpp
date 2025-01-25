@@ -43,7 +43,7 @@ void TitleSession::login() {
     else {
         cout << "Login successful! Token: " << matchedToken << endl;
         //Player 객체 생성 및 데이터 주입 but.. 아직 player 객체가 불안정하니 미완 보류
-        //Player player = new Player()
+        Player player = new Player()
 
     }
 

@@ -1,7 +1,20 @@
 #include "Player.h"
 
-Player::Player(int id, int exp, int money, int level, int mst, int pss, float hp, float mp)
-    : id(id), exp(exp), money(money), level(level), maxStage(mst), presentSession(pss), hp(hp), mp(mp) {
+
+Player player; // 전역 변수 정의
+
+Player::Player()
+    : id(0), exp(0), money(0), level(1), maxStage(0), presentSession(1), hp(100.0f), mp(50.0f),
+    baseAttack(10), baseDefense(5), inventory{ nullptr, nullptr } {
+    // 기본 생성자 내부 구현
+    inventory[0] = new HealingPotion(0, 50, 0.5f);
+    inventory[1] = new ManaPotion(0, 30, 0.3f);
+}
+
+
+
+Player::Player(int id, int exp, int money, int level, int mst)
+    : id(id), exp(exp), money(money), level(level), maxStage(mst) {
     // 인벤토리 초기화
     inventory[0] = new HealingPotion(0, 50, 0.5f);
     inventory[1] = new ManaPotion(0, 30, 0.3f);

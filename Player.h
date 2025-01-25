@@ -10,6 +10,8 @@ using namespace std;
 
 class Player {
 public:
+
+
     int id;
     int exp = 0;           // 경험치
     int level = 1;         // 레벨
@@ -27,7 +29,9 @@ public:
 
     Item* inventory[2]; // 2칸짜리 아이템 배열 (0: HealingPotion, 1: ManaPotion)
 
-    Player(int id, int exp = 0, int money = 0, int level = 1, int mst = 0, int pss = 0, float hp = 100.0f, float mp = 50.0f);
+    Player(); // 기본 생성자 선언
+
+    Player(int id, int exp = 0, int money = 0, int level = 1, int mst = 0);
 
     void attack();
     void defense();
@@ -58,5 +62,8 @@ public:
     Magician(const string& name, int id)
         : Player(id) {}
 };
+
+
+extern Player player; // 다른 파일에서 정의될 변수 선언
 
 #endif // PLAYER_H
