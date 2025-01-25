@@ -33,6 +33,7 @@
     <ClCompile Include="System.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="TitleSession.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -40,6 +41,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="DataSession.cpp">
+=======
+    <ClCompile Include="StoreSession.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StageSession.cpp">
+>>>>>>> aa26b0a6761aa1d8f9959b4d9c5f6c853d847f02
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,6 +69,7 @@
     <ClInclude Include="System.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="TitleSession.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -74,5 +82,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="datas.json" />
+=======
+    <ClInclude Include="StoreSession.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StageSession.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+>>>>>>> aa26b0a6761aa1d8f9959b4d9c5f6c853d847f02
   </ItemGroup>
 </Project>

@@ -1,14 +1,19 @@
 #ifndef TOOL_H
 #define TOOL_H
 
+#include <string>
+using namespace std;
+
 class Tool {
 public:
-    int price;
-    int defensePower;
-    int power;
+    string name;      // 장비 이름 추가
+    int price;        // 가격
+    int defensePower; // 방어력
+    int power;        // 공격력
 
-
-    Tool(int p, int dfpw, int pw);
+    // 매개변수 생성자 (기본값 포함)
+    Tool(const string& n = "Unnamed Tool", int p = 0, int dfpw = 0, int pw = 0)
+        : name(n), price(p), defensePower(dfpw), power(pw) {}
 };
 
 class BasicSword : public Tool {
@@ -46,4 +51,4 @@ public:
     HighArmor();
 };
 
-#endif
+#endif // TOOL_H

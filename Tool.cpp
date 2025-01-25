@@ -1,17 +1,15 @@
 #include "Tool.h"
 
-Tool::Tool(int p, int dfpw, int pw) : price(p), defensePower(dfpw), power(pw) {}
+BasicSword::BasicSword() : Tool("Basic Sword", 50, 0, 3) {}
 
-BasicSword::BasicSword() : Tool(50, 0, 3) {}
+HighQualitySword::HighQualitySword() : Tool("High Quality Sword", 150, 0, 10) {}
 
-HighQualitySword::HighQualitySword() : Tool(150, 0, 10) {}
+WarriorSword::WarriorSword() : Tool("Warrior Sword", 450, 0, 45) {}
 
-WarriorSword::WarriorSword() : Tool(450, 0, 45) {}
+MagicianStick::MagicianStick() : Tool("Magician Stick", 450, 0, 5) {}
 
-MagicianStick::MagicianStick() : Tool(450, 0, 5) {}
+LowArmor::LowArmor() : Tool("Low Armor", 100, 2, 0) {}
 
-LowArmor::LowArmor() : Tool(100, 2, 0) {}
+MiddleArmor::MiddleArmor() : Tool("Middle Armor", 250, 5, 0) {}
 
-MiddleArmor::MiddleArmor() : Tool(250, 5, 0) {}
-
-HighArmor::HighArmor() : Tool(650, 12, 0) {}
+HighArmor::HighArmor() : Tool("High Armor", 650, 12, 0) {}

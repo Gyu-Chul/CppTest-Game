@@ -1,5 +1,9 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "WorkspaceRootPath": "C:\\Users\\Gyuho\\Desktop\\github\\CppTest-Game\\",
+  "Documents": [],
+=======
   "WorkspaceRootPath": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\",
   "Documents": [
     {
@@ -43,24 +47,40 @@
       "RelativeMoniker": "D:0:0:{AEF9A59C-72C9-49F8-9E87-7046B501310F}|Project1.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
+>>>>>>> c47b375fe0f467a8f9ffa7e12e04e1dba85055a4
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
+          "DockedWidth": 206,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+=======
           "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "DataSession.cpp",
               "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\DataSession.cpp",
               "RelativeDocumentMoniker": "DataSession.cpp",
               "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\DataSession.cpp",
               "RelativeToolTip": "DataSession.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
+=======
+              "Title": "World.cpp",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.cpp",
+              "RelativeDocumentMoniker": "World.cpp",
+              "ToolTip": "D:\\OneDrive\\Documents\\Github\\CppTest-Game\\World.cpp",
+              "RelativeToolTip": "World.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+>>>>>>> aa26b0a6761aa1d8f9959b4d9c5f6c853d847f02
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-24T13:46:53.955Z",
               "EditorCaption": ""
@@ -170,6 +190,7 @@
               "EditorCaption": ""
             },
             {
+>>>>>>> c47b375fe0f467a8f9ffa7e12e04e1dba85055a4
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
