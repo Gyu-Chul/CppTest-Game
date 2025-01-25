@@ -29,6 +29,7 @@ void System::handleGeneralSession() {
         cout << "3. Enter Dungeon" << endl;
         cout << "4. Logout" << endl;
         cout << "Enter your choice: ";
+
         cin >> choice;
 
         switch (choice) {

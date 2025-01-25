@@ -1,8 +1,6 @@
 #include "Player.h"
 
 
-Player player; // 전역 변수 정의
-
 Player::Player()
     : id(0), exp(0), money(0), level(1), maxStage(0), presentSession(1), hp(100.0f), mp(50.0f),
     baseAttack(10), baseDefense(5), inventory{ nullptr, nullptr } {

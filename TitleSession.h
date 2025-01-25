@@ -4,5 +4,6 @@ class TitleSession
 {
 public:
     void login();       
-    void signUp();      
+    void signUp();    
+
 };

@@ -2,8 +2,11 @@
 #include "DataSession.h"
 #include <iostream>
 #include "Player.h"
+
+
 using namespace std;
 DataSession dataSession("datas.txt");
+
 
 void TitleSession::login() {
     string userId, userPw;
@@ -42,8 +45,9 @@ void TitleSession::login() {
     }
     else {
         cout << "Login successful! Token: " << matchedToken << endl;
-        //Player 객체 생성 및 데이터 주입 but.. 아직 player 객체가 불안정하니 미완 보류
-        Player player = new Player()
+       
+
+        //여기서 생성되는 이 녀석을 전역변수로써 사용 되어야 함.
 
     }
 
