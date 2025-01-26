@@ -1,5 +1,6 @@
 #include "StageSession.h"
 #include <iostream>
+#include "raylib.h"
 using namespace std;
 
 // 스테이지에 따라 몬스터 생성
@@ -19,59 +20,87 @@ Monster* StageSession::createMonster(int stageNumber) {
     }
 }
 
-// 전투 스테이지
 void StageSession::battleStage(int stageNumber) {
-    cout << "\n--- Stage " << stageNumber << " ---\n";
+    // 스테이지 시작 메시지
+    std::cout << "\n--- Stage " << stageNumber << " ---\n";
 
     // 몬스터 생성
     Monster* monster = createMonster(stageNumber);
 
     // 전투 루프
-    while (player.hp > 0 && monster->hp > 0) {
-        // 플레이어의 턴
-        cout << "\nPlayer's Turn:\n";
-        cout << "1. Basic Attack\n2. Special Attack\n3. Use Healing Potion\n4. Use Mana Potion\n5. Run\nChoose an action: ";
-        int choice;
-        cin >> choice;
+    bool waitingForInput = true; // 입력 대기 플래그
+    while (!WindowShouldClose() && player.hp > 0 && monster->hp > 0) {
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
 
+        // 스테이지 정보 출력
+        DrawText(("--- Stage " + std::to_string(stageNumber) + " ---").c_str(), 300, 50, 20, BLACK);
+
+        // 플레이어와 몬스터 상태 출력
+        DrawText(("Player HP: " + std::to_string(player.hp)).c_str(), 50, 150, 20, DARKGREEN);
+        DrawText(("Player MP: " + std::to_string(player.mp)).c_str(), 50, 180, 20, DARKGREEN);
+        DrawText(("Monster HP: " + std::to_string(monster->hp)).c_str(), 50, 250, 20, RED);
+        DrawText(("Monster MP: " + std::to_string(monster->mp)).c_str(), 50, 280, 20, RED);
+
+        // 행동 선택 출력
+        DrawText("1. Basic Attack", 50, 350, 20, DARKGRAY);
+        DrawText("2. Special Attack", 50, 380, 20, DARKGRAY);
+        DrawText("3. Use Healing Potion", 50, 410, 20, DARKGRAY);
+        DrawText("4. Use Mana Potion", 50, 440, 20, DARKGRAY);
+        DrawText("5. Run", 50, 470, 20, RED);
+
+        DrawText("Enter your choice in the console (1-5):", 50, 520, 20, BLUE);
+
+        EndDrawing();
+
+        // 콘솔에서 사용자 입력 대기
+        int choice = -1;
+        std::cout << "Enter your choice (1-5): ";
+        std::cin >> choice;
+
+        // 입력값 처리
+        if (choice >= 1 && choice <= 5) {
+            waitingForInput = false;
+        }
+        else {
+            std::cin.clear(); // 잘못된 입력 초기화
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // 입력 버퍼 비우기
+            std::cout << "Invalid choice! Please try again.\n";
+            continue;
+        }
+
+        // 선택에 따라 동작 실행
         switch (choice) {
-        case 1: {
-            // 기본 공격
+        case 1: // 기본 공격
             player.attack(*monster);
             break;
-        }
-        case 2: {
-            // 특수 공격
+        case 2: // 특수 공격
             player.mpAttack(*monster);
             break;
-        }
-        case 3:
-            // 힐링 포션 사용
+        case 3: // 힐링 포션 사용
             player.useHealingPotion();
             break;
-        case 4:
-            // 마나 포션 사용
+        case 4: // 마나 포션 사용
             player.useManaPotion();
             break;
-        case 5:
-            // 도망
-            cout << "You ran away from the battle!\n";
+        case 5: // 도망
+            std::cout << "You ran away from the battle!\n";
             delete monster; // 메모리 해제
             player.presentSession = 2; // General Session으로 복귀
             return;
         default:
-            cout << "Invalid choice! Please choose again.\n";
+            std::cout << "Invalid choice! Please try again.\n";
             continue;
         }
 
         // 몬스터가 패배한 경우
         if (monster->hp <= 0) {
-            cout << "\nThe monster has been defeated!\n";
+            std::cout << "\nThe monster has been defeated!\n";
             break;
         }
 
         // 몬스터의 턴
-        cout << "\n\nMonster's Turn:\n";
+        std::cout << "\n\nMonster's Turn:\n";
         if (monster->mp >= 30) {
             monster->specialAttack();
         }
@@ -81,40 +110,40 @@ void StageSession::battleStage(int stageNumber) {
 
         // 플레이어가 패배한 경우
         if (player.hp <= 0) {
-            cout << "\nYou have been defeated!\n";
+            std::cout << "\nYou have been defeated!\n";
             break;
         }
-
-        // 현재 상태 출력
-        cout << "\n\n[Current Status]\n";
-        cout << "Player HP: " << player.hp << "\nPlayer MP: " << player.mp << endl;
-        cout << "Monster HP: " << monster->hp << "\nMonster MP: " << monster->mp << endl;
     }
 
-    // 스테이지 클리어 메시지
+    // 스테이지 클리어 처리
     if (player.hp > 0 && monster->hp <= 0) {
-        cout << "\n\nYou cleared Stage " << stageNumber << "!\n";
+        std::cout << "\n\nYou cleared Stage " << stageNumber << "!\n";
 
         // 경험치 보상
         player.exp += stageNumber * 10;
-        cout << "You earned " << stageNumber * 10 << " experience points.\n";
+        std::cout << "You earned " << stageNumber * 10 << " experience points.\n";
 
         // 돈 보상
         player.money += 50; // 고정된 금액으로 보상
-        cout << "You earned 50 gold. Total Money: " << player.money << " gold.\n";
+        std::cout << "You earned 50 gold. Total Money: " << player.money << " gold.\n";
 
         // 레벨 업 처리
         if (player.exp >= 100) {
             player.level++;
             player.exp -= 100;
-            cout << "Congratulations! You leveled up to Level " << player.level << "!\n";
+            std::cout << "Congratulations! You leveled up to Level " << player.level << "!\n";
+        }
+        // maxStage 갱신
+        if (stageNumber >= player.maxStage) {
+            player.maxStage = stageNumber + 1; // 갱신
+            cout << "\nNew record! Your max stage is now " << player.maxStage << "!\n\n";
         }
     }
 
-
-    delete monster; // 몬스터 객체 메모리 해제
+    // 몬스터 객체 메모리 해제
+    delete monster;
 
     // 스테이지 종료 후 General Session으로 복귀
-    player.presentSession = 2; // General Session 세션 값
-    cout << "Returning to General Session...\n";
+    player.presentSession = 2;
+    std::cout << "Returning to General Session...\n";
 }

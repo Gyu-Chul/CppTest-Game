@@ -1,4 +1,5 @@
 #include "storeSession.h"
+#include "raylib.h"
 
 // 플레이어 객체는 외부에서 전달된다고 가정
 extern Player player;
@@ -59,7 +60,7 @@ void StoreSession::sellManaPotion() {
 
 
 void StoreSession::showAndBuyEquipment() {
-    vector<Tool*> availableTools = {
+    std::vector<Tool*> availableTools = {
         new BasicSword(),
         new HighQualitySword(),
         new WarriorSword(),
@@ -69,37 +70,70 @@ void StoreSession::showAndBuyEquipment() {
         new HighArmor()
     };
 
-    int choice;
-    do {
-        cout << "\n\n=== Equipment Store ===" << endl;
+    int choice = -1;        // 선택값 저장
+    bool waitingForInput = true; // 입력 대기 플래그
+
+    while (!WindowShouldClose() && waitingForInput) {
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+
+        // 제목 출력
+        DrawText("=== Equipment Store ===", 300, 50, 20, BLACK);
+
+        // 장비 목록 렌더링
         for (size_t i = 0; i < availableTools.size(); ++i) {
-            cout << i + 1 << ". " << availableTools[i]->name
-                << " (Price: " << availableTools[i]->price
-                << ", Power: " << availableTools[i]->power
-                << ", Defense: " << availableTools[i]->defensePower << ")" << endl;
+            DrawText(
+                (std::to_string(i + 1) + ". " + availableTools[i]->name +
+                    " (Price: " + std::to_string(availableTools[i]->price) +
+                    ", Power: " + std::to_string(availableTools[i]->power) +
+                    ", Defense: " + std::to_string(availableTools[i]->defensePower) + ")").c_str(),
+                100, 100 + (30 * i), 18, DARKGRAY
+            );
         }
-        cout << availableTools.size() + 1 << ". Back to Store Menu" << endl;
-        cout << "Enter your choice: ";
-        cin >> choice;
 
-        if (choice >= 1 && choice <= availableTools.size()) {
-            Tool* selectedTool = availableTools[choice - 1];
-            if (player.money >= selectedTool->price) {
-                player.money -= selectedTool->price;
-                player.equipItem(new Tool(*selectedTool));
-                cout << "You purchased: " << selectedTool->name
-                    << ". Remaining money: " << player.money << endl;
-            }
-            else {
-                cout << "Not enough money to buy " << selectedTool->name << "!" << endl;
-            }
-        }
-        else if (choice != availableTools.size() + 1) {
-            cout << "Invalid choice. Please try again." << endl;
-        }
-    } while (choice != availableTools.size() + 1);
+        // 'Back to Store Menu' 옵션 출력
+        DrawText(
+            (std::to_string(availableTools.size() + 1) + ". Back to Store Menu").c_str(),
+            100, 100 + (30 * availableTools.size()), 18, RED
+        );
 
-    // Cleanup dynamically allocated tools
+        DrawText("Enter your choice in the console (1-N):", 100, 500, 20, BLUE);
+
+        EndDrawing();
+
+        // 콘솔에서 입력 대기
+        std::cout << "Enter your choice (1-" << availableTools.size() + 1 << "): ";
+        std::cin >> choice;
+
+        // 입력값 검증 및 처리
+        if (!std::cin.fail() && choice >= 1 && choice <= static_cast<int>(availableTools.size() + 1)) {
+            waitingForInput = false; // 유효한 입력일 경우 대기 종료
+        }
+        else {
+            std::cin.clear(); // 잘못된 입력 초기화
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // 입력 버퍼 비우기
+            std::cout << "Invalid input. Please try again." << std::endl;
+        }
+    }
+
+    // 선택된 동작 처리
+    if (choice >= 1 && choice <= static_cast<int>(availableTools.size())) {
+        Tool* selectedTool = availableTools[choice - 1];
+        if (player.money >= selectedTool->price) {
+            player.money -= selectedTool->price;
+            player.equipItem(new Tool(*selectedTool));
+            std::cout << "You purchased: " << selectedTool->name
+                << ". Remaining money: " << player.money << std::endl;
+        }
+        else {
+            std::cout << "Not enough money to buy " << selectedTool->name << "!" << std::endl;
+        }
+    }
+    else if (choice == static_cast<int>(availableTools.size() + 1)) {
+        std::cout << "Returning to Store Menu..." << std::endl;
+    }
+
+    // 동적으로 할당된 Tool 객체 정리
     for (Tool* tool : availableTools) {
         delete tool;
     }

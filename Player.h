@@ -33,7 +33,6 @@ public:
 
     Item* inventory[2]; // 2칸짜리 아이템 배열 (0: HealingPotion, 1: ManaPotion)
 
-    Player(); // 기본 생성자 선언
 
     Player(string id, int exp = 0, int money = 0, int level = 1, int mst = 0);
 

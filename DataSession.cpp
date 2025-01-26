@@ -26,9 +26,9 @@ void DataSession::create(const string& userId, const string& userPw) {
     outputFile << "\ntoken=" << (lastToken + 1) << "\n";
     outputFile << "userId=" << userId << "\n";
     outputFile << "userpw=" << userPw << "\n";
-    outputFile << "job=default\nlevel=1\nexp=0\nmoney=0\n";
-    for (int i = 1; i <= 5; i++) outputFile << "bag" << i << "=null\n";
-    outputFile << "weapon=1\narmour=null\npresentstage=1\n";
+    outputFile << "job=default\nlevel=1\nexp=0\nmoney=0\nbag1=1\n";
+    for (int i = 2; i <= 5; i++) outputFile << "bag" << i << "=0\n";
+    outputFile << "presentstage=1\n";
     outputFile << "manapotioncount=0\nhealingpotioncount=0\n-\n";
     outputFile.close();
 }
