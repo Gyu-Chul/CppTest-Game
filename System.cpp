@@ -97,7 +97,8 @@ void System::handleStoreSession() {
         cout << "3. Sell Healing Potion (25 Gold)" << endl;
         cout << "4. Sell Mana Potion (15 Gold)" << endl;
         cout << "5. Show and Buy Equipment" << endl;
-        cout << "6. Back to General Session" << endl;
+        cout << "6. Sell Equipment" << endl;
+        cout << "7. Back to General Session" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -118,6 +119,9 @@ void System::handleStoreSession() {
             storeSession.showAndBuyEquipment();
             break;
         case 6:
+            storeSession.sellEquippedTool();
+            break;
+        case 7:
             player.presentSession = 2; // General Session으로 전환
             cout << "Returning to General Session..." << endl;
             return;
@@ -140,17 +144,22 @@ void System::handleStageSession() {
         cout << "Enter your choice: ";
         cin >> choice;
 
-        switch (choice) {
-        case 1:
-        case 2:
-        case 3:
-            stageSession.battleStage(choice); // 난이도를 stageNumber로 전달
-            return; // 스테이지 전투 종료 후 General Session으로 복귀
-        case 4:
+        // 플레이어의 maxStage와 비교
+        if (choice >= 1 && choice <= 3) {
+            if (choice > player.maxStage) {
+                cout << "\nYou cannot access this stage. Your max stage is " << player.maxStage << ".\n";
+            }
+            else {
+                stageSession.battleStage(choice); // 난이도를 stageNumber로 전달
+                return; // 스테이지 전투 종료 후 General Session으로 복귀
+            }
+        }
+        else if (choice == 4) {
             player.presentSession = 2; // General Session으로 전환
             cout << "Returning to General Session...\n";
             return;
-        default:
+        }
+        else {
             cout << "Invalid choice. Please try again." << endl;
         }
     } while (true);

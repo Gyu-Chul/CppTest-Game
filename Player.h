@@ -20,7 +20,7 @@ public:
     int exp = 0;           // 경험치
     int level = 1;         // 레벨
     int money = 0;         // 돈
-    int maxStage = 0;      // 최고로 클리어한 스테이지
+    int maxStage = 1;      // 최고로 클리어한 스테이지
     int presentSession = 1;// 현재 들어와있는 세션 위치
     float hp = 100.0f;     // 기본 HP
     float mp = 50.0f;      // 기본 MP
@@ -33,9 +33,7 @@ public:
 
     Item* inventory[2]; // 2칸짜리 아이템 배열 (0: HealingPotion, 1: ManaPotion)
 
-    Player(); // 기본 생성자 선언
-
-    Player(string id, int exp = 0, int money = 0, int level = 1, int mst = 0);
+    Player(string id, int exp = 0, int money = 0, int level = 1, int mst = 1);
 
     void attack(Monster& monster);
     void mpAttack(Monster& monster);

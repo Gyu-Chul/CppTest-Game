@@ -11,6 +11,7 @@ public:
 	void sellHealingPotion();
 	void sellManaPotion();
 	void showAndBuyEquipment();
+	void sellEquippedTool();
 };
 
 #endif // STORE_SESSION_H

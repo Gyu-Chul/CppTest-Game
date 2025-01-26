@@ -101,13 +101,19 @@ void StageSession::battleStage(int stageNumber) {
 
         // 돈 보상
         player.money += 50; // 고정된 금액으로 보상
-        cout << "You earned 50 gold. Total Money: " << player.money << " gold.\n";
+        cout << "You earned 50 gold. Total Money: " << player.money << " gold.\n\n";
 
         // 레벨 업 처리
         if (player.exp >= 100) {
             player.level++;
             player.exp -= 100;
             cout << "Congratulations! You leveled up to Level " << player.level << "!\n";
+        }
+
+        // maxStage 갱신
+        if (stageNumber >= player.maxStage) {
+            player.maxStage = stageNumber + 1; // 갱신
+            cout << "\nNew record! Your max stage is now " << player.maxStage << "!\n\n";
         }
     }
 

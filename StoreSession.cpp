@@ -104,3 +104,41 @@ void StoreSession::showAndBuyEquipment() {
         delete tool;
     }
 }
+
+
+void StoreSession::sellEquippedTool() {
+    // 현재 장착된 장비 보여줌
+    player.showEquippedTools();
+
+    if (player.equippedTools.empty()) {
+        cout << "You have no equipped items to sell!" << endl;
+        return;
+    }
+
+    // 장비 선택
+    size_t choice;
+    cout << "Enter the index of the item you want to sell (or 0 to cancel): ";
+    cin >> choice;
+
+    // 선택한 장비 처리
+    if (choice == 0) {
+        cout << "Canceled selling an item." << endl;
+        return;
+    }
+
+    if (choice > 0 && choice <= player.equippedTools.size()) {
+        Tool* toolToSell = player.equippedTools[choice - 1];
+        int sellPrice = toolToSell->price / 2; // 판매가는 가격의 절반
+
+        // 장비 해제
+        if (player.unequipItem(choice - 1)) {
+            player.money += sellPrice;
+            cout << "You sold " << toolToSell->name << " for " << sellPrice
+                << " gold. Current money: " << player.money << endl;
+            delete toolToSell; // 동적 메모리 해제
+        }
+    }
+    else {
+        cout << "Invalid choice. Please try again." << endl;
+    }
+}
