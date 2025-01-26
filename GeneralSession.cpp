@@ -5,42 +5,42 @@
 
 using namespace std;
 
-// ÇÃ·¹ÀÌ¾î °´Ã¼´Â ¿ÜºÎ¿¡¼­ Àü´ÞµÈ´Ù°í °¡Á¤
+// ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ÜºÎ¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÞµÈ´Ù°ï¿½ ï¿½ï¿½ï¿½ï¿½
 extern Player player;
 
 void GeneralSession::checkMyInfo() {
-    // ¿¹½Ã Ãâ·Â
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
     cout << "=== My Info ===" << endl;
     cout << "Name: " << player.id << endl;
     cout << "Level: " << player.level << endl;
     cout << "Experience: " << player.exp << endl;
     cout << "Money: " << player.money << endl;
     cout << "================" << endl;
-    // ÀÌ°÷¿¡¼­ player °´Ã¼ÀÇ ¼Ó¼ºÀ» ¸ðµÎ ³ëÃâÇÏµµ·Ï ±¸Çö.. but ¾ÆÁ÷ player °´Ã¼°¡ ºÒ¾ÈÁ¤ÇÏ´Ï ¹Ì¿Ï º¸·ù
+    // ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ player ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ó¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.. but ï¿½ï¿½ï¿½ï¿½ player ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ò¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ì¿ï¿½ ï¿½ï¿½ï¿½ï¿½
 }
 
 void GeneralSession::goToShop() {
-    // »óÁ¡À¸·Î ÀÌµ¿ (¼¼¼Ç °ª º¯°æ)
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
     player.presentSession = 3;
     cout << "You have entered the shop." << endl;
 }
 
 void GeneralSession::enterDungeon() {
-    // ´øÀüÀ¸·Î ÀÌµ¿ (¼¼¼Ç °ª º¯°æ)
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
     player.presentSession = 4;
     cout << "You have entered the dungeon." << endl;
 }
 
 void GeneralSession::logout() {
-    // DB ÃÖ½ÅÈ­ ¹× ·Î±×¾Æ¿ô Ã³¸®
+    // DB ï¿½Ö½ï¿½È­ ï¿½ï¿½ ï¿½Î±×¾Æ¿ï¿½ Ã³ï¿½ï¿½
     DataSession dataSession("datas.txt");
-    const int playerToken = 1; // ÅäÅ«Àº »ó¼ö·Î °¡Á¤
+    const int playerToken = 1; // ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     dataSession.update(playerToken, "level", to_string(player.level));
     dataSession.update(playerToken, "exp", to_string(player.exp));
     dataSession.update(playerToken, "money", to_string(player.money));
     dataSession.update(playerToken, "presentstage", to_string(player.presentSession));
     cout << "Your progress has been saved. Logging out..." << endl;
 
-    // ¼¼¼Ç Á¾·á
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     player.presentSession = 0;
 }

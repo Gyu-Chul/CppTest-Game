@@ -3,16 +3,20 @@
 
 #include "Tool.h"
 #include "Item.h"
+#include "Monster.h"
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
+
+class Monster; // 전방 선언
 
 class Player {
 public:
 
 
-    int id;
+    string id;
     int exp = 0;           // 경험치
     int level = 1;         // 레벨
     int money = 0;         // 돈
@@ -25,19 +29,18 @@ public:
     int baseDefense = 5;   // 기본 방어력
 
     vector<Tool*> equippedTools; // 장착된 모든 장비
-    const size_t MAX_TOOLS = 5;  // 최대 장비 슬롯
+    static const size_t MAX_TOOLS = 5;  // 최대 장비 슬롯
 
     Item* inventory[2]; // 2칸짜리 아이템 배열 (0: HealingPotion, 1: ManaPotion)
 
     Player(); // 기본 생성자 선언
 
-    Player(int id, int exp = 0, int money = 0, int level = 1, int mst = 0);
+    Player(string id, int exp = 0, int money = 0, int level = 1, int mst = 0);
 
-    void attack();
+    void attack(Monster& monster);
+    void mpAttack(Monster& monster);
     void defense();
     void runout();
-    void mpAttack();
-    void usingItem();
 
     bool equipItem(Tool* item);       // 장비 착용
     bool unequipItem(size_t index);   // 장비 해제
@@ -49,21 +52,22 @@ public:
     void useManaPotion();    // 마나 포션 사용
 
     void showInventory() const; // 인벤토리 출력 (포션 개수 확인)
+
+    void takeDamage(int damage); // 데미지 피해
 };
 
 class Warrior : public Player {
 public:
-    Warrior(const string& name, int id)
+    Warrior(const string& id)
         : Player(id) {}
 };
 
 class Magician : public Player {
 public:
-    Magician(const string& name, int id)
+    Magician(const string& id)
         : Player(id) {}
 };
 
-
-extern Player player; // 다른 파일에서 정의될 변수 선언
+extern Player player;
 
 #endif // PLAYER_H

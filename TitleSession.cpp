@@ -7,7 +7,6 @@
 using namespace std;
 DataSession dataSession("datas.txt");
 
-
 void TitleSession::login() {
     string userId, userPw;
     cout << "Enter User ID: ";
@@ -47,7 +46,12 @@ void TitleSession::login() {
         cout << "Login successful! Token: " << matchedToken << endl;
        
 
-        //¿©±â¼­ »ý¼ºµÇ´Â ÀÌ ³à¼®À» Àü¿ªº¯¼ö·Î½á »ç¿ë µÇ¾î¾ß ÇÔ.
+        // ìƒˆë¡œìš´ Player ê°ì²´ ìƒì„±
+        player = Player("gyuchul", 10, 100, 20, 10);  // ê¸°ì¡´ ê°ì²´ë¥¼ ìƒˆ ê°ì²´ë¡œ ëŒ€ì²´
+
+        player.presentSession = 2; // General Sessionìœ¼ë¡œ ì „í™˜
+        std::cout << "Current Session: " << player.presentSession << std::endl;
+        std::cout << "Current Session: " << player.id << std::endl;
 
     }
 

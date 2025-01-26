@@ -1,3 +1,21 @@
+#ifndef STAGE_SESSION_H
+#define STAGE_SESSION_H
+
+#include "Player.h"
+#include "Monster.h"
+#include <iostream>
+
+class StageSession {
+public:
+    void battleStage(int stageNumber); // 특정 스테이지의 전투를 처리
+private:
+    Monster* createMonster(int stageNumber); // 스테이지에 따라 몬스터 생성
+};
+
+#endif // STAGE_SESSION_H
+
+
+
 // stage 기본 클래스 생성 후
 //몇 번째 스테이지에 들어오는 것인지 System에게 전달 받으면
 //그 난이도에 맞는 monster 객체 생성

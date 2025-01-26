@@ -6,12 +6,12 @@ World::World(int n)
 	: number(n) {}
 
 int main() {
-	// System °´Ã¼ »ý¼º
+	// System ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 	System system; 
 	
-	// ¸ÞÀÎ ·çÇÁ
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
-	while (player.presentSession != 0) { // presentSession == 0ÀÌ¸é Á¾·á 
+	while (player.presentSession != 0) { // presentSession == 0ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 		system.executeSession(); } cout << "Game exited successfully." << endl; return 0;
 
 
