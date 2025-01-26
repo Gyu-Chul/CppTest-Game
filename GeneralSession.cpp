@@ -10,11 +10,16 @@ extern Player player;
 
 void GeneralSession::checkMyInfo() {
     // ���� ���
-    cout << "=== My Info ===" << endl;
+    cout << "\n\n=== My Info ===" << endl;
     cout << "Name: " << player.id << endl;
     cout << "Level: " << player.level << endl;
     cout << "Experience: " << player.exp << endl;
     cout << "Money: " << player.money << endl;
+    cout << "Attack Power: " << player.getAttackPower() << endl;
+    cout << "Defense Power: " << player.getDefensePower() << endl;
+    cout << "================" << endl;
+    player.showEquippedTools();
+    player.showInventory();
     cout << "================" << endl;
     // �̰����� player ��ü�� �Ӽ��� ��� �����ϵ��� ����.. but ���� player ��ü�� �Ҿ����ϴ� �̿� ����
 }
@@ -22,13 +27,13 @@ void GeneralSession::checkMyInfo() {
 void GeneralSession::goToShop() {
     // �������� �̵� (���� �� ����)
     player.presentSession = 3;
-    cout << "You have entered the shop." << endl;
+    cout << "You have entered the shop.\n" << endl;
 }
 
 void GeneralSession::enterDungeon() {
     // �������� �̵� (���� �� ����)
     player.presentSession = 4;
-    cout << "You have entered the dungeon." << endl;
+    cout << "You have entered the dungeon.\n" << endl;
 }
 
 void GeneralSession::logout() {

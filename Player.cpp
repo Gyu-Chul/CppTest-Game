@@ -1,7 +1,6 @@
 #include "Player.h"
 
-Player player("DefaultName", 1, 1, 1, 1);
-
+//기본 생성자로 player 객체 만드는 경우: 즉 매개변수 없이 고정값으로 만들 때 활용되는 생성자
 //Player::Player()
 //    : id("basicID"), exp(0), money(0), level(1), maxStage(0), presentSession(1), hp(100.0f), mp(50.0f),
 //    baseAttack(10), baseDefense(5), inventory{ nullptr, nullptr } {
@@ -10,13 +9,19 @@ Player player("DefaultName", 1, 1, 1, 1);
 //    inventory[1] = new ManaPotion(0, 30, 0.3f);
 //}
 
-
+// 우리는 DB에 있는 해당 id, exp 등등을 불러와서 그것에 맞게 생성하기 위한 생성자
 Player::Player(string id, int exp, int money, int level, int mst)
     : id(id), exp(exp), money(money), level(level), maxStage(mst) {
     // 인벤토리 초기화
     inventory[0] = new HealingPotion(0, 50, 0.5f);
     inventory[1] = new ManaPotion(0, 30, 0.3f);
 }
+
+// 이 객체는 프로그램 시작 전에 이미 객체로 만들어져 있음.
+// 전역변수를 일단 생성해놓고 로그인 하면 이것의 데이터를 갱신하는 형태
+Player player("DefaultName", 1, 1, 1, 1);
+
+
 
 void Player::attack(Monster& monster) {
     int damage = max(0, getAttackPower() - monster.defense);
@@ -73,8 +78,8 @@ void Player::useManaPotion() {
 // 인벤토리 출력
 void Player::showInventory() const {
     cout << "Inventory:" << endl;
-    cout << "Healing Potions: " << inventory[0]->number << endl;
-    cout << "Mana Potions: " << inventory[1]->number << endl;
+    cout << "    Healing Potions: " << inventory[0]->number << endl;
+    cout << "    Mana Potions: " << inventory[1]->number << endl;
 }
 
 
@@ -131,7 +136,7 @@ void Player::showEquippedTools() const {
     std::cout << "Equipped Items:" << std::endl;
     for (size_t i = 0; i < equippedTools.size(); ++i) {
         const auto& item = equippedTools[i];
-        std::cout << i << ": " << item->name
+        std::cout << "    " << i+1 << ": " << item->name
             << " (Power: " << item->power
             << ", Defense: " << item->defensePower
             << ")" << std::endl;

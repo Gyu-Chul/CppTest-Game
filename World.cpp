@@ -11,10 +11,14 @@ int main() {
 	
 	// ���� ����
 	
-	while (player.presentSession != 0) { // presentSession == 0�̸� ���� 
-		system.executeSession(); } cout << "Game exited successfully." << endl; return 0;
+	while (player.presentSession != 0) 
+	{ 
+		cout << player.id << endl;
 
+		system.executeSession(); 
 
+	} 
+	cout << "Game exited successfully." << endl; 
 	return 0;
 
 }

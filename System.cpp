@@ -58,7 +58,7 @@ void System::handleTitleSession() {
 void System::handleGeneralSession() {
     int choice;
     do {
-        cout << "=== General Session ===" << endl;
+        cout << "\n\n=== General Session ===" << endl;
         cout << "1. Check My Info" << endl;
         cout << "2. Go to Shop" << endl;
         cout << "3. Enter Dungeon" << endl;
@@ -91,7 +91,7 @@ void System::handleGeneralSession() {
 void System::handleStoreSession() {
     int choice;
     do {
-        cout << "=== Store Session ===" << endl;
+        cout << "\n\n=== Store Session ===" << endl;
         cout << "1. Buy Healing Potion (50 Gold)" << endl;
         cout << "2. Buy Mana Potion (30 Gold)" << endl;
         cout << "3. Sell Healing Potion (25 Gold)" << endl;
@@ -132,7 +132,7 @@ void System::handleStoreSession() {
 void System::handleStageSession() {
     int choice;
     do {
-        cout << "=== Stage Selection ===" << endl;
+        cout << "\n\n=== Stage Selection ===" << endl;
         cout << "1. Easy Mode\n";
         cout << "2. Middle Mode\n";
         cout << "3. Hard Mode\n";

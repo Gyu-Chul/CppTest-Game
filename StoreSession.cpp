@@ -71,7 +71,7 @@ void StoreSession::showAndBuyEquipment() {
 
     int choice;
     do {
-        cout << "=== Equipment Store ===" << endl;
+        cout << "\n\n=== Equipment Store ===" << endl;
         for (size_t i = 0; i < availableTools.size(); ++i) {
             cout << i + 1 << ". " << availableTools[i]->name
                 << " (Price: " << availableTools[i]->price

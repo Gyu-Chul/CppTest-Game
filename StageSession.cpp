@@ -71,7 +71,7 @@ void StageSession::battleStage(int stageNumber) {
         }
 
         // 몬스터의 턴
-        cout << "\nMonster's Turn:\n";
+        cout << "\n\nMonster's Turn:\n";
         if (monster->mp >= 30) {
             monster->specialAttack();
         }
@@ -86,14 +86,14 @@ void StageSession::battleStage(int stageNumber) {
         }
 
         // 현재 상태 출력
-        cout << "\n[Current Status]\n";
+        cout << "\n\n[Current Status]\n";
         cout << "Player HP: " << player.hp << "\nPlayer MP: " << player.mp << endl;
         cout << "Monster HP: " << monster->hp << "\nMonster MP: " << monster->mp << endl;
     }
 
     // 스테이지 클리어 메시지
     if (player.hp > 0 && monster->hp <= 0) {
-        cout << "\nYou cleared Stage " << stageNumber << "!\n";
+        cout << "\n\nYou cleared Stage " << stageNumber << "!\n";
 
         // 경험치 보상
         player.exp += stageNumber * 10;
